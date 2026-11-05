@@ -66,7 +66,5 @@ python3 -m unittest discover -s tests -v # pruebas
 
 ## Integrantes
 
-- Nombre Apellido 1
-- Nombre Apellido 2
-- Nombre Apellido 3
-- Nombre Apellido 4
+- VALDIVIEZO ATERO, JHUNIOR
+- ZURITA RIMAICUNA, ABNER 
