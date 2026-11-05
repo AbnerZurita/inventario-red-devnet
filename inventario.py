@@ -117,7 +117,8 @@ def main():
 
     if not args.analizar:
         formatos = args.formatos.split(",") if args.formatos else config["formatos_salida"]
-        rutas = exportar(inventario, resumen, formatos, config["carpeta_salida"])
+        nombre = f"inventario_{args.familia.lower().replace(' ', '_')}" if args.familia else "inventario"
+        rutas = exportar(inventario, resumen, formatos, config["carpeta_salida"], nombre)
         print("\nArchivos generados:")
         for ruta in rutas:
             print(f"  {ruta}")
