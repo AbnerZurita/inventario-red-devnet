@@ -1,0 +1,13 @@
+# Credenciales: nunca al repositorio
+.env
+
+# Entorno virtual y caché de Python
+venv/
+__pycache__/
+*.pyc
+
+# Salidas generadas y registros (se regeneran al ejecutar)
+salidas/*
+!salidas/.gitkeep
+logs/*
+!logs/.gitkeep

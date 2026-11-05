@@ -1,0 +1,27 @@
+# Configuración del proyecto (sin credenciales: esas van en .env)
+
+# Sandbox Always-On de Cisco DevNet - Catalyst Center (HTTPS)
+url_base: "https://sandboxdnac.cisco.com"
+
+# Verificación del certificado TLS del servidor. Opciones:
+#   true                     -> usa las CA del sistema (falla: el sandbox tiene certificado autofirmado)
+#   "certs/sandboxdnac.pem"  -> confía solo en el certificado guardado del sandbox (lo más seguro)
+#   false                    -> no verifica la identidad del servidor (SOLO laboratorio)
+verificar_ssl: false
+
+# Segundos de espera por respuesta y número de reintentos ante 429/5xx/timeout
+timeout: 15
+reintentos: 3
+
+# Formatos en los que se exporta el inventario
+formatos_salida:
+  - json
+  - yaml
+  - xml
+  - csv
+
+carpeta_salida: "salidas"
+archivo_log: "logs/inventario.log"
+
+# Datos de respaldo para trabajar sin conexión (--offline)
+archivo_muestra: "datos/muestra_dispositivos.json"
